@@ -1,0 +1,5038 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- 
+import Fonts 
+---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap');
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+
+/*--------------------------------------------------------------------- 
+basic carousel-control-prev
+---------------------------------------------------------------------*/
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none !important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     padding: 0;
+     font-weight: 400;
+     font-size: 17px;
+     line-height: 28px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+:focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #252525 !important;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+.full img {
+     height: 31px;
+     max-width: 230px;
+     margin-top: -4px;
+}
+
+.full.gmbr img {
+     margin-top: 1px;
+}
+
+.titlepage {
+     padding-bottom: 60px;
+}
+
+.titlepage::before {
+     content: "";
+     position: absolute;
+     border-radius: 10px;
+     border: #fff solid 5px;
+     border-width: 5px;
+     width: 80px;
+     z-index: 999;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     top: 55px;
+}
+
+.titlepage h2 {
+     font-size: 45px;
+     font-weight: bold;
+     line-height: 50px;
+     color: #323232;
+}
+
+.read_more {
+     display: inline-block;
+     background: #6dcff6;
+     color: #fff;
+     max-width: 160px;
+     height: 61px;
+     line-height: 61px;
+     width: 100%;
+     font-size: 17px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.read_more:hover {
+     background: #0e0b01;
+     color: #fff;
+     transition: ease-in all 0.5s;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.img_responsive {
+     max-width: 100%;
+}
+
+.text_align_center {
+     text-align: center;
+}
+
+.text_align_left {
+     text-align: left;
+}
+
+.text_align_right {
+     text-align: right;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.container {
+     max-width: 1170px;
+}
+
+
+/*---------------------------- 
+loader  
+----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #fff;
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 280px;
+}
+
+
+/*--------------------------------------------------------------------- 
+header 
+---------------------------------------------------------------------*/
+
+.header {
+     width: 100%;
+     background: rgba(39, 43, 44, 0.87);
+     height: 85px;
+     padding: 37px 30px;
+     position: fixed;
+     z-index: 999;
+     box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.8);
+}
+
+.header .logo_section {
+     margin-top: -13px;
+}
+
+.sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+
+a#kontakwa.float {
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     bottom: 20px;
+     right: 10px;
+     background-color: #25d366;
+     color: #FFF;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.8);
+     z-index: 999;
+     transition: ease-out all 0.2s;
+     animation-name: hubungiWAx;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+}
+
+a#kontakwa.float:hover {
+     background-color: #0e8c3d;
+     transition: ease-in all 0.2s;
+}
+
+a#kontakwa[title]:hover::after {
+     content: attr(title);
+     background-color: white;
+     color: black;
+     font-size: 14px;
+     position: inherit;
+     right: 5.5%;
+     padding: 15px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 25px;
+     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+i#kontak.my-float {
+     margin-top: 16px;
+}
+
+a#kunjshopee.float {
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     bottom: 60px;
+     right: 10px;
+     background-color: #EE4D2D;
+     color: #FFF;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.8);
+     z-index: 999;
+     transition: ease-out all 0.2s;
+     animation-name: kunjungiShopeex;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+}
+
+a#kunjshopee.float:hover {
+     color: #252525;
+     background-color: #a32e17;
+     transition: ease-in all 0.2s;
+}
+
+a#kunjshopee[title]:hover::after {
+     content: attr(title);
+     background-color: white;
+     color: black;
+     font-size: 14px;
+     position: inherit;
+     right: 5.5%;
+     padding: 15px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 25px;
+     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+img#kontakshop.my-float {
+     width: 26px;
+     height: 29px;
+}
+
+@keyframes hubungiWAx {
+     0% {
+          bottom: 10px;
+     }
+
+     50% {
+          bottom: 50px;
+     }
+
+     100% {
+          bottom: 10px;
+     }
+}
+
+@keyframes kunjungiShopeex {
+     0% {
+          bottom: 80px;
+     }
+
+     50% {
+          bottom: 120px;
+     }
+
+     100% {
+          bottom: 80px;
+     }
+}
+
+@keyframes hubungiWA {
+     0% {
+          bottom: 10px;
+     }
+
+     50% {
+          bottom: 50px;
+     }
+
+     100% {
+          bottom: 10px;
+     }
+}
+
+@keyframes hubungiWA1 {
+     0% {
+          bottom: 10px;
+     }
+
+     50% {
+          bottom: 50px;
+     }
+
+     100% {
+          bottom: 10px;
+     }
+}
+
+@keyframes kunjungiShopee {
+     0% {
+          bottom: 75px;
+     }
+
+     50% {
+          bottom: 115px;
+     }
+
+     100% {
+          bottom: 75px;
+     }
+}
+
+@keyframes kunjungiShopee2 {
+     0% {
+          bottom: 70px;
+     }
+
+     50% {
+          bottom: 110px;
+     }
+
+     100% {
+          bottom: 70px;
+     }
+}
+
+@keyframes kunjungiShopee1 {
+     0% {
+          bottom: 70px;
+     }
+
+     50% {
+          bottom: 110px;
+     }
+
+     100% {
+          bottom: 70px;
+     }
+}
+
+@keyframes kunjungiShopee3 {
+     0% {
+          bottom: 57.5px;
+     }
+
+     50% {
+          bottom: 97.5px;
+     }
+
+     100% {
+          bottom: 57.5px;
+     }
+}
+
+@keyframes kunjungiShopee4 {
+     0% {
+          bottom: 50px;
+     }
+
+     50% {
+          bottom: 90px;
+     }
+
+     100% {
+          bottom: 50px;
+     }
+}
+
+
+/*--------------------------------------------------------------------- 
+table 
+---------------------------------------------------------------------*/
+table#tabel_main {
+     border: 0px solid;
+     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+     font-size: 14px;
+     margin-top: 60px;
+}
+
+thead#tabel_head {
+     background-color: #252525;
+     color: white;
+     text-align: center;
+}
+
+tbody {
+     text-align: center;
+     border: 1px solid #ececec;
+     color: #252525;
+}
+
+table th,
+table td {
+     word-wrap: break-word;
+}
+
+td#gamb_tab img {
+     height: 65px;
+}
+
+
+/*--------------------------------------------------------------------- 
+sidebar 
+---------------------------------------------------------------------*/
+.sidebar nav {
+     float: left;
+     position: relative;
+     top: -100px;
+     left: 0;
+     background: transparent;
+     position: fixed;
+     z-index: 998;
+     box-shadow: 2px 0px 8px 5px rgba(0, 0, 0, 0.8);
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+
+.sidebar img {
+     width: 44px;
+     height: 44px;
+}
+
+.sidebar nav ul {
+     text-align: center;
+}
+
+.sidebar nav ul li {
+     position: relative;
+     width: 70px;
+     cursor: pointer;
+     background: rgba(39, 43, 44, 0.87);
+     opacity: 0.9;
+     text-transform: uppercase;
+     transition: all .4s ease-out;
+}
+
+.sidebar nav ul li:after {
+     position: absolute;
+     background: white;
+     color: #A4907C;
+     top: 0;
+     left: 70px;
+     width: 70px;
+     height: 100%;
+     opacity: .5;
+     transform: perspective(400px) rotateY(90deg);
+     transform-origin: 0 100%;
+     transition: all .4s ease-out;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+
+.sidebar nav ul li:nth-child(1):after {
+     content: "Biji Kopi";
+     line-height: 15px;
+     padding-top: 33px;
+     font-size: 16px;
+     font-weight: bolder;
+}
+
+.sidebar nav ul li:nth-child(2):after {
+     content: "Ceng keh";
+     line-height: 15px;
+     padding-top: 33px;
+     font-size: 16px;
+     font-weight: bolder;
+}
+
+.sidebar nav ul li:nth-child(3):after {
+     content: "Jahe Bubuk";
+     line-height: 15px;
+     padding-top: 33px;
+     font-size: 16px;
+     font-weight: bolder;
+}
+
+.sidebar nav ul li:nth-child(4):after {
+     content: "Gula Aren";
+     line-height: 15px;
+     padding-top: 33px;
+     font-size: 16px;
+     font-weight: bolder;
+}
+
+.sidebar nav ul li:nth-child(5):after {
+     content: "Shopee";
+     line-height: 15px;
+     padding-top: 43px;
+     font-size: 16px;
+     font-weight: bolder;
+}
+
+.sidebar nav ul li:hover {
+     transform: translateX(-70px);
+}
+
+.sidebar nav ul li:hover:after {
+     opacity: 1;
+     transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+
+.sidebar nav ul li>div {
+     display: inline-block;
+     padding: 25px 0;
+     background: transparent;
+}
+
+.sidebar nav ul li div {
+     position: relative;
+}
+
+
+/*--------------------------------------------------------------------- 
+menu section
+---------------------------------------------------------------------*/
+
+.navigation.navbar {
+     float: right;
+     padding: 0;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     padding: 0px 30px;
+     color: #d3d3d3;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 400;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #fff;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     color: #fff;
+}
+
+.di_no {
+     display: none;
+}
+
+ul.email {
+     padding-top: 1px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+}
+
+ul.email li {
+     padding: 0px 35px;
+}
+
+ul.email li:nth-child(2) {
+     padding-right: 0;
+}
+
+ul.email li a {
+     font-size: 17px;
+     color: #fff;
+}
+
+ul.email li i {
+     color: #fff;
+     font-size: 19px;
+}
+
+
+/** banner_main **/
+
+#bo_ho1 img {
+     transition: transform 0.25s ease;
+     max-height: 200px;
+     margin-top: 5px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+#bo_ho1 img:hover {
+     -webkit-transform: scale(1.45);
+     transform: scale(1.45);
+     margin-bottom: 40px;
+     transition: ease-in all 0.3s;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#bo_ho7 img {
+     transition: transform 0.25s ease;
+     max-width: 356px;
+     margin-top: 5px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+#bo_ho7 img:hover {
+     -webkit-transform: scale(1.45);
+     transform: scale(1.45);
+     margin-bottom: 40px;
+     transition: ease-in all 0.3s;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#bo_ho2 img {
+     transition: transform 0.25s ease;
+}
+
+#bo_ho2 img:hover {
+     -webkit-transform: scale(1.2);
+     transform: scale(1.2);
+     transition: ease-in all 0.3s;
+}
+
+#bo_ho3 img {
+     transition: transform 0.25s ease;
+}
+
+#bo_ho3 img:hover {
+     -webkit-transform: scale(1.3);
+     transform: scale(1.3);
+     transition: ease-in all 0.3s;
+}
+
+#bo_ho5 img {
+     width: 135px;
+     height: 135px;
+     margin-top: 4px;
+     margin-bottom: 25px;
+     border-radius: 50%;
+     animation-name: animasi3d;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+
+@keyframes animasi3d {
+     0% {
+          background-color: transparent;
+     }
+
+     50% {
+          transform: rotate3d(1, 4, 3, 360deg);
+     }
+
+     100% {
+          background-color: transparent;
+     }
+}
+
+
+/** we_do **/
+/* background-image: url('../images/nature.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center; */
+
+.we_do.login {
+     background-color: white;
+}
+
+.we_do.login .card.hom {
+     max-width: 50%;
+     max-height: 70%;
+}
+
+.we_do.login .card.hom .we_box2 {
+     max-height: 90%;
+}
+
+.we_do {
+     background: #fefaf0;
+     padding: 90px 0 190px 0;
+}
+
+.we_do .titlepage::before {
+     border: #A4907C solid 5px;
+     border-radius: 10px;
+     z-index: 1;
+}
+
+.we_do div#prodkops.container {
+     margin-top: 60px;
+}
+
+.we_do div#prodother.container {
+     margin-top: -250px;
+}
+
+div#budayas.we_do {
+     margin-top: -217px;
+     margin-bottom: -110px;
+}
+
+#xaxa img#bdy {
+     width: 206px;
+     height: 206px;
+     border: 0px solid;
+     margin-bottom: 45px;
+     border-radius: 50%;
+     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+     animation-name: animasi3dx;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+
+@keyframes animasi3dx {
+     0% {
+          background-color: transparent;
+     }
+
+     50% {
+          transform: rotate3d(1, 4, 3, 360deg);
+     }
+
+     100% {
+          background-color: transparent;
+     }
+}
+
+.we_do .card .card-body center#tengah {
+     font-size: 22px;
+     margin-top: -10px;
+     margin-bottom: -5px;
+}
+
+.we1_do {
+     position: inherit;
+     padding: 0;
+}
+
+#bo_ho:hover {
+     border: #292a2c solid 1px;
+     transition: ease-in all 0.5s;
+}
+
+.we_box {
+     background-color: #fffef9;
+     border: #e6e7e8 solid 1px;
+     transition: ease-in all 0.5s;
+     padding: 40px;
+     margin-bottom: 26px;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+     border-radius: 10px;
+}
+
+.we_box:hover {
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box h3 {
+     color: #292929;
+     font-size: 22px;
+     font-weight: bold;
+     line-height: 25px;
+     text-transform: uppercase;
+     padding-top: 25px;
+}
+
+.we_box h3 a#deswita {
+     font-size: 16px;
+}
+
+.we_box2 h3 a#deswita {
+     font-size: 16px;
+}
+
+.we_box h3 img {
+     float: right;
+}
+
+.we_box p {
+     color: #292929;
+     padding-top: 25px;
+     display: block;
+     padding-bottom: 40px;
+}
+
+.we_box2 a#shopee1y {
+     max-width: 200px;
+     border-radius: 10px;
+     background: #EE4D2D;
+     height: 41px;
+     line-height: 41px;
+     margin: auto;
+     display: block;
+     position: absolute;
+     bottom: 12%;
+     left: 0;
+     right: 0;
+}
+
+.we_box2 a#shopee1y:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box2 a#shopee1y img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#shopee1 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#shopee1:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#shopee1 img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#shopee2 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#shopee2:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#shopee2 img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#shopee3 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#shopee3:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#shopee3 img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#shopee4 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#shopee4:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#shopee4 img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#galcoff {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#cont1 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_do div#kontakus a#cont1 {
+     margin: 0 auto;
+     background: #252525;
+     margin-top: 10px;
+     border-radius: 20px;
+}
+
+.we_do div#kontakus.kontekas1 a#cont1 {
+     margin-right: -22px;
+}
+
+.we_do div#kontakus.kontekas a#cont1 {
+     margin-left: -22px;
+}
+
+.we_do div#kontakus a#cont1:hover {
+     background: #6f6f6f;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#galceng {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#cont2 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#galjahe {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#cont3 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#galaren {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#cont4 {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+}
+
+.we_box a#shopee1x {
+     max-width: 200px;
+     position: absolute;
+     bottom: 0.8%;
+     left: 37%;
+     right: 37%;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#shopee1x:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#shopee1x img {
+     width: 18px;
+     height: 19px;
+     margin-top: -4px;
+}
+
+.we_box a#galut {
+     max-width: 200px;
+     position: absolute;
+     bottom: 0.8%;
+     left: 11%;
+     border-radius: 10px;
+     background-color: darkred;
+}
+
+.we_box a#galut:hover {
+     background-color: #bf4545;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#contus {
+     max-width: 200px;
+     position: absolute;
+     bottom: 0.8%;
+     right: 11%;
+     border-radius: 10px;
+}
+
+.we_box a#syope {
+     max-width: 200px;
+     margin-top: -5px;
+     border-radius: 10px;
+     background: #EE4D2D;
+}
+
+.we_box a#syope:hover {
+     background: #fa836b;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box a#buklet {
+     max-width: 200px;
+     margin-top: 4px;
+}
+
+.we_box .read_more {
+     max-width: 131px;
+     height: 41px;
+     line-height: 41px;
+     margin: 0 auto;
+     display: block;
+     background: #252525;
+     border-radius: 10px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.we_box .read_more:hover {
+     background: #6f6f6f;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_do.profdesas {
+     margin-bottom: -120px;
+     margin-top: -20px;
+}
+
+.we_do.profdesas.tamb {
+     margin-bottom: -120px;
+     margin-top: -80px;
+}
+
+.we_do .card-head a {
+     color: white;
+     font-weight: bolder;
+     font-size: 28px;
+     line-height: 60px;
+}
+
+.we_do .card#galgal {
+     margin-top: -60px;
+     width: 100%;
+     height: 100%;
+     border: 1px #252525 solid;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.we_do h3#culttitle span#spen {
+     font-weight: lighter;
+     font-size: 16px;
+     font-style: italic;
+     color: #808080;
+}
+
+.we_box2 {
+     background-color: #fffef9;
+     border: #e6e7e8 solid 1px;
+     transition: ease-in all 0.5s;
+     padding: 40px;
+     margin-bottom: 26px;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+     border-radius: 20px;
+}
+
+.we_box2:hover {
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we_box2 h3 {
+     color: #292929;
+     font-size: 22px;
+     font-weight: bold;
+     line-height: 25px;
+     text-transform: uppercase;
+     padding-top: 25px;
+}
+
+.we_box2 h3 img {
+     float: right;
+}
+
+.we_box2 p {
+     color: #292929;
+     display: block;
+     padding-bottom: 40px;
+     font-size: 14px;
+     margin-bottom: -35px;
+}
+
+.we_box2 p.errors {
+     padding-top: 5px;
+     color: rgb(172, 0, 0);
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+     font-size: 14px;
+     line-height: 1.7;
+}
+
+.custom-file-label {
+     font-size: 14px;
+     line-height: 1.5;
+}
+
+.form-group label#label {
+     color: #252525;
+     font-weight: bolder;
+}
+
+button#gambz {
+     color: #ffffff;
+     background-color: #252525;
+     width: 135px;
+     height: 45px;
+     font-size: 14px;
+     padding: 0px;
+     margin: 0 auto;
+     margin-top: 10px;
+     left: 0;
+     right: 0;
+     border-radius: 15px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+button#gambz i {
+     font-size: 18px;
+}
+
+button#gambz:hover {
+     color: #ffffff;
+     background-color: #6f6f6f;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+button#gamb {
+     color: #ffffff;
+     background-color: #252525;
+     width: 45px;
+     height: 45px;
+     font-size: 18px;
+     padding: 0px;
+     margin-top: 10px;
+     margin-bottom: -25px;
+     border-radius: 15px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+button#gamb:hover {
+     color: #ffffff;
+     background-color: #6f6f6f;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+button#gambs {
+     color: #ffffff;
+     background-color: #252525;
+     width: 45px;
+     height: 45px;
+     font-size: 18px;
+     padding: 0px;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-bottom: -25px;
+     border-radius: 15px;
+     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+button#gambs:hover {
+     color: #ffffff;
+     background-color: #6f6f6f;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.we5 .carousel-indicators {
+     top: 100%;
+     left: 0px;
+     right: 0px;
+     z-index: 50;
+}
+
+.we5 .carousel-indicators .active {
+     background: #A4907C;
+     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+     width: 8px;
+     height: 8px;
+     margin-top: -2.5px;
+}
+
+.we5 .carousel-indicators li {
+     cursor: pointer;
+     background: #252525;
+     border-radius: 40px;
+     width: 4px;
+     height: 4px;
+}
+
+.we5 .carousel-indicators li:hover {
+     background-color: #A4907C;
+}
+
+.we5 a.carousel-control-next,
+.we5 a.carousel-control-prev {
+     background: #ffffff;
+     top: 45%;
+     opacity: 1;
+     font-size: 33px;
+     color: #000000;
+     border: 1px black solid;
+     border-radius: 50%;
+     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.we5 a.carousel-control-next:focus,
+.we5 a.carousel-control-next:hover,
+.we5 a.carousel-control-prev:focus,
+.we5 a.carousel-control-prev:hover {
+     background: black;
+     color: #fff;
+     opacity: 1;
+}
+
+.we6 .carousel-indicators {
+     top: 100%;
+     left: 0px;
+     right: 0px;
+     z-index: 50;
+}
+
+.we6 .carousel-indicators .active {
+     background: #A4907C;
+     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.we6 .carousel-indicators li {
+     cursor: pointer;
+     background: #cacaca;
+     border-radius: 40px;
+     width: 22px;
+     height: 6px;
+}
+
+.we6 .carousel-indicators li:hover {
+     background-color: #A4907C;
+}
+
+.we6 a.carousel-control-next,
+.we6 a.carousel-control-prev {
+     background: #ffffff;
+     top: 45%;
+     opacity: 1;
+     font-size: 33px;
+     color: #000000;
+     border: 1px black solid;
+     border-radius: 50%;
+     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.we6 a.carousel-control-next:focus,
+.we6 a.carousel-control-next:hover,
+.we6 a.carousel-control-prev:focus,
+.we6 a.carousel-control-prev:hover {
+     background: black;
+     color: #fff;
+     opacity: 1;
+}
+
+
+/** end we_do **/
+
+
+/** Cards **/
+
+.contact .card#kontakcard {
+     width: 100%;
+     border: 1px #252525 solid;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+     border-radius: 30px;
+}
+
+.contact .card#kontakcard .card-head#kontakhead {
+     border: 2px #252525 solid;
+     background-color: #252525;
+     border-top-left-radius: 27px;
+     border-top-right-radius: 27px;
+}
+
+.contact div#xaxa.card-body {
+     background-color: #fffef9;
+     border-radius: 30px;
+}
+
+.we_do div#prodkops .card#homstays {
+     margin-top: -60px;
+     background-color: #F1DEC9;
+     width: 100%;
+     height: 100%;
+     border-radius: 30px;
+     border: 1px #252525 solid;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.we_do div#prodkops .card#homstays .card-head {
+     border: 2px #252525 solid;
+     background-color: #252525;
+     border-top-left-radius: 27px;
+     border-top-right-radius: 27px;
+}
+
+/** end Cards **/
+
+
+/** about **/
+
+.about {
+     background-image: url('../images/beautyindro.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     padding-top: 120px;
+     position: relative;
+     height: 100vh;
+}
+
+.about.input {
+     background-image: none;
+     height: 0;
+}
+
+.about .titlepage::before {
+     border: #A4907C solid 5px;
+     border-radius: 10px;
+     z-index: 1;
+}
+
+.about .titlepage {
+     padding-bottom: 0;
+     margin-bottom: 0px;
+}
+
+.about .titlepage h2 {
+     color: #fff;
+}
+
+.about .titlepage p {
+     line-height: 35px;
+     padding-top: 20px;
+     color: #fff;
+     font-size: 16px;
+}
+
+.about a#profdes.profdes {
+     background-color: white;
+     border: 1px #252525 solid;
+     font-size: 26px;
+     color: black;
+     position: absolute;
+     text-align: center;
+     bottom: 5%;
+     left: 48.3%;
+     right: 48.3%;
+     padding-top: 4px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+.about a#profdes.profdes:hover {
+     color: white;
+     background-color: #252525;
+     border: 8px #252525 solid;
+}
+
+
+/** end about **/
+
+
+/** contact section **/
+
+.contact {
+     background: #fefaf0;
+     padding: 90px 0;
+}
+
+.contact .titlepage::before {
+     right: inherit;
+     border: #A4907C solid 5px;
+     border-radius: 10px;
+     left: 15px;
+     z-index: 1;
+}
+
+.contact.abobot div.card {
+     border: #e6e7e8 solid 1px;
+     transition: ease-in all 0.5s;
+     padding: 40px;
+     margin-bottom: 26px;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+     border-radius: 10px;
+}
+
+.contact.abobot div.card {
+     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+     transition: ease-in all 0.3s;
+}
+
+.contact.abobot div.card:hover {
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+     transition: ease-in all 0.3s;
+}
+
+.contact.abobot div.card h3 {
+     color: #292929;
+     font-size: 22px;
+     font-weight: bold;
+     line-height: 25px;
+     text-transform: uppercase;
+     padding-top: 25px;
+}
+
+.contact.abobot div.card p {
+     color: #292929;
+     padding-top: 25px;
+     display: block;
+     padding-bottom: 40px;
+     font-size: 14px;
+     margin-bottom: -45px;
+}
+
+.we_box2 iframe.card.img-top.homst {
+     border: 0px solid;
+     width: 100%;
+     height: 200px;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     transition: ease-in all 0.3s;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.we_box2 iframe.card.img-top.homst:hover {
+     transition: ease-in all 0.3s;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+span.adres {
+     font-weight: bolder;
+     font-size: 15px;
+}
+
+.main_form .contactus {
+     border: #d2d2d3 solid 1px;
+     padding: 0 15px;
+     margin-bottom: 25px;
+     width: 100%;
+     height: 71px;
+     background: #fff;
+     color: #888888;
+     font-size: 16px;
+     font-weight: normal;
+}
+
+.main_form h5.card-title {
+     font-size: 18px;
+}
+
+.main_form p.card-text {
+     font-size: 16px;
+}
+
+.contact .card-link:hover {
+     color: #A4907C;
+     cursor: pointer;
+}
+
+.we_do .card-link:hover {
+     color: #A4907C;
+     cursor: pointer;
+}
+
+.contact .card-body iframe {
+     border-radius: 10px;
+     transition: ease-in all 0.5s;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.contact .card-body iframe:hover {
+     border: 1px black solid;
+     transition: ease-in all 0.5s;
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.contact .card-body iframe {
+     border-radius: 10px;
+     transition: ease-in all 0.5s;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+     width: 100%;
+     height: 250px;
+}
+
+.contact .card-head a {
+     line-height: 60px;
+}
+
+.contact .card-head img {
+     height: 44px;
+     margin-bottom: 5px;
+}
+
+.main_form .textarea {
+     border: #d2d2d3 solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     background: #fff;
+     color: #888888;
+     font-size: 18px;
+     font-weight: normal;
+     padding: 57px 15px 0 15px;
+     border-radius: 0;
+     height: 150px;
+}
+
+.main_form .send_btn {
+     font-size: 17px;
+     transition: ease-in all 0.5s;
+     background-color: #323232;
+     text-transform: uppercase;
+     color: #fff;
+     padding: 25px 0px;
+     max-width: 252px;
+     width: 100%;
+     display: block;
+     margin-top: 10px !important;
+     font-weight: bold;
+}
+
+.main_form .send_btn:hover {
+     background-color: #464646c7;
+     transition: ease-in all 0.5s;
+     color: #fff;
+}
+
+#request *::placeholder {
+     color: #888888;
+     opacity: 1;
+}
+
+
+/** end contact section **/
+
+
+/** footer **/
+
+.footer {
+     background: #222222;
+     padding-top: 60px;
+     box-shadow: 0px -2px 8px 5px rgba(0, 0, 0, 0.8);
+}
+
+.Informa h3 {
+     color: #ffffff;
+     font-size: 23px;
+     font-weight: bold;
+     line-height: 21px;
+     margin-bottom: 15px;
+     margin-top: 26px;
+     text-transform: uppercase;
+}
+
+.Informa li {
+     font-size: 17px;
+     line-height: 37px;
+     color: #ffffff;
+}
+
+.Informa li a:hover {
+     color: #bdbdbe;
+}
+
+.helpful li a {
+     color: #fff;
+     font-size: 17px;
+     line-height: 30px;
+}
+
+.helpful li a:hover {
+     color: #bdbdbe;
+}
+
+.conta li a {
+     color: #ffffff;
+     font-size: 17px;
+}
+
+.conta li a i {
+     padding-right: 5px;
+}
+
+.copyright {
+     background: #151515;
+     margin-top: 80px;
+     padding: 20px 0px;
+}
+
+.copyright p {
+     color: #bdbdbe;
+     font-weight: 400;
+}
+
+.copyright a {
+     color: #bdbdbe;
+}
+
+.copyright a:hover {
+     color: #fff;
+}
+
+ul.social_icon li {
+     display: inline-block;
+     padding-right: 15px;
+}
+
+ul.social_icon li:last-child {
+     padding-right: 0;
+}
+
+ul.social_icon li a {
+     color: #fff;
+     display: inline-block;
+     text-align: center;
+     line-height: 33px;
+     font-size: 28px;
+     font-weight: bold;
+}
+
+ul.social_icon li a:hover {
+     color: #bdbdbe;
+     transform: rotate(360deg);
+     transition: ease-in all 0.7s;
+}
+
+/* .newslatter_form {
+     display: flex;
+     align-items: center;
+     margin-bottom: 70px;
+}
+
+.ente {
+     color: #000;
+     border: inherit;
+     padding: 0 30px;
+     height: 66px;
+     width: 100%;
+     font-size: 17px;
+}
+
+.subs_btn {
+     max-width: 289px;
+     display: inline-block;
+     background: #151515;
+     height: 66px;
+     width: 30%;
+     color: #fff;
+     font-size: 17px;
+     text-transform: uppercase;
+     font-weight: bold;
+     transition: ease-in all 0.5s;
+}
+
+.subs_btn:hover {
+     background: #fff;
+     color: #151515;
+     transition: ease-in all 0.5s;
+} */
+
+
+/** end footer **/
+
+
+/*- - ener page css--*/
+
+.inner_page .header {
+     box-shadow: 0 -3px 20px 0px #717171;
+     position: inherit;
+
+}
+
+.inner_page .about {
+     margin: 90px 0;
+}
+
+.modal-header .close {
+     font-size: 22px;
+}
+
+
+/* Device Width Responsive */
+/* Large Laptop */
+@media screen and (min-width: 1440px) {
+
+     #muncul {
+          display: none;
+     }
+
+     .muncul {
+          display: none;
+     }
+
+     .footer a img {
+          height: 51px;
+          width: 146px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     ul.social_icon {
+          float: right;
+     }
+
+     .we_box2 {
+          height: 91%;
+     }
+
+     .we_box2.inputed {
+          height: 96%;
+     }
+
+     div#kontakus a#cont1 {
+          width: 175px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .we5 a.carousel-control-next,
+     .we5 a.carousel-control-prev {
+          width: 54px;
+          height: 54px;
+     }
+
+     .we5 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we5 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Medium Laptop / Monitor */
+@media screen and (min-width: 1200px) and (max-width: 1439.8px) {
+
+     #muncul {
+          display: none;
+     }
+
+     .muncul {
+          display: none;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -120px;
+          margin-top: -20px;
+     }
+
+     button#gamb {
+          width: 45px;
+          height: 45px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 18px;
+     }
+
+     button#gambs {
+          width: 45px;
+          height: 45px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 18px;
+     }
+
+     .modal-header .close {
+          font-size: 22px;
+     }
+
+     #bo_ho5 img {
+          width: 125px;
+          height: 125px;
+     }
+
+     #bo_ho1 img {
+          max-height: 200px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.45);
+          transform: scale(1.45);
+     }
+
+     #bo_ho7 img {
+          max-width: 356px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+     }
+
+     a#kontakwa.float {
+          width: 55px;
+          height: 55px;
+          font-size: 27px;
+          animation-name: hubungiWA;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     i#kontak.my-float {
+          margin-top: 13.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 55px;
+          height: 55px;
+          animation-name: kunjungiShopee;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     img#kontakshop.my-float {
+          width: 24px;
+          height: 27px;
+          margin-top: -5px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 26px;
+          left: 47.8%;
+          right: 47.8%;
+          padding-top: 4px;
+          width: 50px;
+          height: 50px;
+     }
+
+     .we_box2 {
+          padding: 30px;
+          height: 91%;
+     }
+
+     .we_box2.inputed {
+          height: 96%;
+     }
+
+     .we_box2 p {
+          margin-bottom: -35px;
+     }
+
+     .we_box2 p.errors {
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .full img {
+          margin-top: -4px;
+     }
+
+     .footer a img {
+          padding-left: 80px;
+          height: 51px;
+          width: 206px;
+          margin-top: 8px
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     ul.social_icon {
+          float: right;
+          padding-right: 80px;
+     }
+
+     .copyright p {
+          padding-left: 80px;
+     }
+
+     .helpful {
+          padding-left: 80px;
+     }
+
+     .Informa ul li {
+          padding-right: 80px;
+          font-size: 14.5px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 40px;
+          font-size: 13px;
+     }
+
+     .we_box .read_more {
+          font-size: 15px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 145px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 14px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .we5 a.carousel-control-next,
+     .we5 a.carousel-control-prev {
+          width: 52px;
+          height: 52px;
+     }
+
+     .we5 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we5 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Medium-Small Laptop / Monitor */
+@media screen and (min-width: 1125px) and (max-width: 1199.8px) {
+
+     #muncul {
+          display: none;
+     }
+
+     .muncul {
+          display: none;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -120px;
+          margin-top: -20px;
+     }
+
+     button#gamb {
+          width: 42px;
+          height: 42px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 16px;
+          border-radius: 12px;
+     }
+
+     button#gambs {
+          width: 42px;
+          height: 42px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 16px;
+          border-radius: 12px;
+     }
+
+     .modal-header .close {
+          font-size: 20px;
+     }
+
+     #bo_ho5 img {
+          width: 115px;
+          height: 115px;
+     }
+
+     #bo_ho1 img {
+          max-height: 185px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.45);
+          transform: scale(1.45);
+     }
+
+     #bo_ho7 img {
+          max-width: 329px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+     }
+
+     a#kontakwa.float {
+          width: 55px;
+          height: 55px;
+          font-size: 27px;
+          animation-name: hubungiWA;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     i#kontak.my-float {
+          margin-top: 13.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 55px;
+          height: 55px;
+          animation-name: kunjungiShopee;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     img#kontakshop.my-float {
+          width: 24px;
+          height: 27px;
+          margin-top: -5px;
+     }
+
+     .we_box2 {
+          padding: 30px;
+          height: 91%;
+     }
+
+     .we_box2.inputed {
+          height: 95%;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 26px;
+          left: 47.8%;
+          right: 47.8%;
+          padding-top: 4px;
+          width: 50px;
+          height: 50px;
+     }
+
+     .we_box p {
+          font-size: 15px;
+     }
+
+     .we_box2 p {
+          font-size: 13px;
+          margin-bottom: -45px;
+     }
+
+     .we_box2 p.errors {
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we_box2 {
+          padding: 30px;
+          height: 91%;
+     }
+
+     .full img {
+          margin-top: -4px;
+     }
+
+     .footer a img {
+          padding-left: 80px;
+          height: 51px;
+          width: 206px;
+          margin-top: 8px
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     ul.social_icon {
+          float: right;
+          padding-right: 80px;
+     }
+
+     .copyright p {
+          padding-left: 80px;
+     }
+
+     .helpful {
+          padding-left: 80px;
+     }
+
+     .Informa ul li {
+          padding-right: 80px;
+          font-size: 13.5px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 35px;
+          font-size: 13px;
+     }
+
+     .we_box .read_more {
+          font-size: 15px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 145px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 14px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .we5 a.carousel-control-next,
+     .we5 a.carousel-control-prev {
+          width: 50px;
+          height: 50px;
+     }
+
+     .we5 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we5 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Small Laptop / Monitor */
+@media screen and (min-width: 1024px) and (max-width: 1124.8px) {
+
+     #muncul {
+          display: none;
+     }
+
+     .muncul {
+          display: none;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     button#gamb {
+          width: 42px;
+          height: 42px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 16px;
+          border-radius: 12px;
+     }
+
+     button#gambs {
+          width: 42px;
+          height: 42px;
+          margin-top: 10px;
+          margin-bottom: -17px;
+          font-size: 16px;
+          border-radius: 12px;
+     }
+
+     .modal-header .close {
+          font-size: 20px;
+     }
+
+     #bo_ho5 img {
+          width: 115px;
+          height: 115px;
+     }
+
+     #bo_ho1 img {
+          max-height: 185px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+     }
+
+     #bo_ho7 img {
+          max-width: 329px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+     }
+
+     a#kontakwa.float {
+          width: 55px;
+          height: 55px;
+          font-size: 27px;
+          animation-name: hubungiWA;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     i#kontak.my-float {
+          margin-top: 13.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 55px;
+          height: 55px;
+          animation-name: kunjungiShopee;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 13px;
+          right: 6.5%;
+     }
+
+     img#kontakshop.my-float {
+          width: 24px;
+          height: 27px;
+          margin-top: -5px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 21px;
+          left: 47.4%;
+          right: 47.4%;
+          padding-top: 4px;
+          width: 45px;
+          height: 45px;
+     }
+
+     .we_box p {
+          font-size: 14px;
+     }
+
+     .we_box2 h3 {
+          font-size: 20px;
+     }
+
+     .we_box2 p {
+          font-size: 12px;
+          margin-bottom: -45px;
+     }
+
+     .we_box2 p.errors {
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we_box2 {
+          padding: 30px;
+          height: 91%;
+     }
+
+     .we_box2.inputed {
+          height: 95%;
+     }
+
+     .full img {
+          margin-top: -6px;
+     }
+
+     .footer a img {
+          padding-left: 70px;
+          height: 51px;
+          width: 206px;
+          margin-top: 8px
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .helpful {
+          padding-left: 70px;
+     }
+
+     ul.social_icon {
+          float: right;
+          padding-right: 70px;
+          font-size: 22px;
+          line-height: 45px;
+          padding-top: 7px;
+     }
+
+     .copyright p {
+          padding-left: 70px;
+          font-size: 15px;
+     }
+
+     .Informa ul li {
+          padding-right: 70px;
+          font-size: 12.5px;
+     }
+
+     .helpful ul li a {
+          font-size: 15px;
+     }
+
+     .conta ul li a {
+          font-size: 15px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 35px;
+          font-size: 13px;
+     }
+
+     .we_box .read_more {
+          font-size: 15px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 145px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 14px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .we5 a.carousel-control-next,
+     .we5 a.carousel-control-prev {
+          width: 50px;
+          height: 50px;
+     }
+
+     .we5 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we5 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Tablet / Ipad */
+@media screen and (min-width: 768px) and (max-width: 1023.8px) {
+
+     #muncul {
+          display: none;
+     }
+
+     .muncul {
+          display: none;
+     }
+
+     .we_do.login .card.hom {
+          max-width: 80%;
+     }
+
+     .we_do div#prodkops .card#homstays {
+          border-radius: 23px;
+     }
+
+     .we_do div#prodkops .card#homstays .card-head {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     .contact .card#kontakcard {
+          border-radius: 23px;
+     }
+
+     .contact .card#kontakcard .card-head#kontakhead {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     .contact div#xaxa.card-body {
+          border-radius: 23px;
+     }
+
+     #xaxa img#bdy {
+          width: 156px;
+          height: 156px;
+     }
+
+     .we_do div#kontakus.kontekas1 a#cont1 {
+          margin-right: -20px;
+     }
+
+     .we_do div#kontakus.kontekas a#cont1 {
+          margin-left: -20px;
+     }
+
+     ul.social_icon {
+          float: right;
+          padding-right: 65px;
+     }
+
+     ul.social_icon li a {
+          line-height: 33px;
+          font-size: 23px;
+     }
+
+     .copyright p {
+          padding-left: 65px;
+          font-size: 11px;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+          margin-bottom: 30px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     .custom-file-input:lang(en)~.custom-file-label::after {
+          font-size: 13px;
+          line-height: 1.9;
+     }
+
+     .custom-file-label {
+          font-size: 13px;
+          line-height: 1.8;
+     }
+
+     .form-control {
+          font-size: 13px;
+     }
+
+     .form-group label#label {
+          font-size: 13px;
+     }
+
+     .bawah {
+          margin-bottom: 40px;
+     }
+
+     button#gambz {
+          margin-top: -15px;
+     }
+
+     button#gambz.loginbuton {
+          margin-top: 20px;
+     }
+
+     button#gamb {
+          width: 37px;
+          height: 37px;
+          margin-top: 7px;
+          margin-bottom: -17px;
+          font-size: 14px;
+          border-radius: 12px;
+     }
+
+     button#gambs {
+          width: 37px;
+          height: 37px;
+          margin-top: 7px;
+          margin-bottom: -17px;
+          font-size: 14px;
+          border-radius: 12px;
+     }
+
+     .modal-title {
+          font-size: 15px;
+     }
+
+     .modal-header .close {
+          font-size: 20px;
+     }
+
+     span.adres {
+          font-size: 15px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 21px;
+          left: 47%;
+          right: 47%;
+          padding-top: 4px;
+          width: 45px;
+          height: 45px;
+     }
+
+     a#kontakwa.float {
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          animation-name: hubungiWA;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 12px;
+          right: 9%;
+     }
+
+     i#kontak.my-float {
+          margin-top: 13.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 50px;
+          height: 50px;
+          animation-name: kunjungiShopee2;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 12px;
+          right: 9%;
+     }
+
+     img#kontakshop.my-float {
+          width: 22px;
+          height: 25px;
+          margin-top: -10px;
+     }
+
+     .footer a img {
+          padding-left: 65px;
+          height: 48px;
+          width: 203px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .full img {
+          height: 25px;
+          max-width: 180px;
+          margin-top: -5px;
+     }
+
+     .full.gmbr img {
+          margin-top: 4px;
+     }
+
+     .we_box .read_more {
+          max-width: 135px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 13px;
+          margin-top: -10px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 135px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 12px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          font-size: 13px;
+     }
+
+     .contact .card-body iframe {
+          width: 100%;
+          height: 205px;
+     }
+
+     .contact h4.card-title {
+          margin-bottom: 2px;
+     }
+
+     .contact .card-head a {
+          line-height: 37px;
+     }
+
+     .contact .card-head img {
+          height: 32px;
+          margin-bottom: 1px;
+     }
+
+     .contact a#watsap {
+          font-size: 12px;
+          margin-bottom: -35px;
+     }
+
+     .contact a#emailkub {
+          font-size: 12px;
+          margin-bottom: -35px;
+     }
+
+     .contact a#locatdet {
+          font-size: 12px;
+     }
+
+     .contact a#locatdet div {
+          margin-bottom: -35px;
+     }
+
+     .helpful {
+          padding-left: 65px;
+     }
+
+     .Informa ul li {
+          padding-right: 65px;
+          font-size: 9px;
+     }
+
+     .Informa .fotor {
+          font-size: 18px;
+     }
+
+     .helpful ul li a {
+          font-size: 11.4px;
+     }
+
+     .conta ul li a {
+          font-size: 10.8px;
+     }
+
+     .contact div#garis.titlepage::before {
+          margin-top: -60px;
+     }
+
+     .contact .titlepage h2#cont1 {
+          font-size: 25px;
+          margin-top: -45px;
+     }
+
+     .contact .titlepage::before {
+          margin-top: -15px;
+          margin-bottom: -10px;
+     }
+
+     .contact .titlepage h2 {
+          font-size: 25px;
+          margin-bottom: -25px;
+     }
+
+     .we_do .titlepage::before {
+          margin-top: -65px;
+     }
+
+     .we_do .titlepage h2 {
+          font-size: 25px;
+          margin-bottom: -25px;
+          margin-top: -45px;
+     }
+
+     .about .titlepage::before {
+          margin-top: -15px;
+     }
+
+     .about .titlepage h2 {
+          margin-bottom: -20px;
+          font-size: 25px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 30px;
+          font-size: 12px;
+     }
+
+     .we_do .card-head a {
+          font-size: 25px;
+          line-height: 40px;
+     }
+
+     #bo_ho5 img {
+          width: 84px;
+          height: 84px;
+     }
+
+     #bo_ho1 img {
+          max-height: 161px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+          margin-bottom: 20px;
+     }
+
+     #bo_ho7 img {
+          max-width: 286px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+          margin-bottom: 20px;
+     }
+
+     .we_do .card .card-body center#tengah {
+          font-size: 16px;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a {
+          cursor: pointer;
+          transition: ease-in all 0.3s;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a:hover {
+          font-size: 22px;
+          transition: ease-in all 0.3s;
+          color: #A4907C;
+     }
+
+     .we_box {
+          padding: 30px;
+     }
+
+     .we_box h3 {
+          font-size: 20px;
+          padding-top: 12px;
+     }
+
+     .we_box h3 a#deswita {
+          font-size: 14px;
+     }
+
+     .we_box2 h3 a#deswita {
+          font-size: 14px;
+     }
+
+     .we_box p {
+          font-size: 11px;
+          line-height: 25px;
+          padding-bottom: 20px;
+     }
+
+     .we_box2 {
+          padding: 20px;
+          height: 91%;
+     }
+
+     .we_box2.inputed {
+          height: 95%;
+     }
+
+     .we_box2 h3 {
+          font-size: 16px;
+          line-height: 17.5px;
+          margin-bottom: 5px;
+     }
+
+     .we_box2 p {
+          font-size: 11px;
+          line-height: 19px;
+          margin-top: -15px;
+          margin-bottom: -45px;
+     }
+
+     .we_box2 p.errors {
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we5 a.carousel-control-next,
+     .we5 a.carousel-control-prev {
+          width: 47px;
+          height: 47px;
+     }
+
+     .we5 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we5 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Large Mobile Phone */
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
+
+     #muncul1 {
+          display: none;
+     }
+
+     .muncul1 {
+          display: none;
+     }
+
+     .we_do.login .card.hom {
+          max-width: 80%;
+     }
+
+     .we_do div#prodkops .card#homstays {
+          border-radius: 23px;
+     }
+
+     .we_do div#prodkops .card#homstays .card-head {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     .contact .card#kontakcard {
+          border-radius: 23px;
+     }
+
+     #xaxa img#bdy {
+          width: 156px;
+          height: 156px;
+     }
+
+     .contact .card#kontakcard .card-head#kontakhead {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     .contact div#xaxa.card-body {
+          border-radius: 23px;
+     }
+
+     .we_do div#kontakus.kontekas4 a#cont1 {
+          margin-top: 6px;
+     }
+
+     .we_do div#kontakus.kontekas2 a#cont1 {
+          margin-top: 6px;
+     }
+
+     .header {
+          max-height: 11px;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+          margin-bottom: 20px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     ul.social_icon li a {
+          line-height: 45px;
+          font-size: 20px;
+     }
+
+     .custom-file-input:lang(en)~.custom-file-label::after {
+          font-size: 13px;
+          line-height: 1.9;
+     }
+
+     .custom-file-label {
+          font-size: 13px;
+          line-height: 1.8;
+     }
+
+     .form-control {
+          font-size: 13px;
+     }
+
+     .form-group label#label {
+          font-size: 13px;
+     }
+
+     .bawahx {
+          margin-bottom: 17px;
+     }
+
+     .bawah {
+          margin-bottom: -5px;
+     }
+
+     button#gambz i {
+          font-size: 18px;
+     }
+
+     button#gambz {
+          margin-top: 20px;
+          font-size: 14px;
+          width: 125px;
+          height: 38px;
+          border-radius: 15px;
+     }
+
+     button#gamb {
+          width: 37px;
+          height: 37px;
+          margin-top: 7px;
+          margin-bottom: -17px;
+          font-size: 14px;
+          border-radius: 12px;
+     }
+
+     button#gamb {
+          width: 39px;
+          height: 39px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 13px;
+          border-radius: 12px;
+     }
+
+     button#gambs {
+          width: 39px;
+          height: 39px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 13px;
+          border-radius: 12px;
+     }
+
+     .modal-content {
+          width: 90%;
+     }
+
+     .modal-title {
+          font-size: 13px;
+     }
+
+     .modal-header .close {
+          font-size: 18px;
+     }
+
+     span.adres {
+          font-size: 13px;
+     }
+
+     div#fasilitas.col-md-6 {
+          margin-top: -2px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 21px;
+          left: 46.2%;
+          right: 46.2%;
+          padding-top: 2.5px;
+          width: 40px;
+          height: 40px;
+     }
+
+     .about a#profdes.profdes i {
+          margin-left: -1px;
+     }
+
+     .about a#profdes.profdes:hover {
+          border: 7px #252525 solid;
+     }
+
+     a#kontakwa.float {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          animation-name: hubungiWA1;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 10px;
+          right: 10%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     i#kontak.my-float {
+          margin-top: 10.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 40px;
+          height: 40px;
+          animation-name: kunjungiShopee3;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 10px;
+          right: 10%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     img#kontakshop.my-float {
+          width: 17px;
+          height: 19px;
+          margin-top: -19px;
+     }
+
+     .navigation.navbar-dark .navbar-toggler-icon {
+          background: url(../images/menu_btn-1.png);
+          background-repeat: no-repeat;
+          float: right;
+          margin-top: 2px;
+     }
+
+     .footer a img {
+          height: 47px;
+          width: 135px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .header .logo_section {
+          margin-top: -6px;
+     }
+
+     .full img {
+          margin-top: -18px;
+          height: 25px;
+          max-width: 200px;
+     }
+
+     .full.gmbr img {
+          margin-top: -16px;
+     }
+
+     .we_box .read_more {
+          max-width: 110px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 12px;
+          margin-top: -10px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 130px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 12px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          font-size: 14.5px;
+     }
+
+     .contact h2#location {
+          margin-top: -50px;
+     }
+
+     .contact div.titlepage.hello::before {
+          margin-top: -65px;
+          margin-bottom: -10px;
+     }
+
+     .contact .card-body iframe {
+          width: 100%;
+          height: 205px;
+     }
+
+     .contact h4.card-title {
+          margin-bottom: 2px;
+     }
+
+     .contact .card-head a {
+          line-height: 37px;
+     }
+
+     .contact .card-head img {
+          height: 32px;
+          margin-bottom: 1px;
+     }
+
+     .contact a#watsap {
+          font-size: 12px;
+     }
+
+     .contact a#emailkub {
+          font-size: 12px;
+     }
+
+     .contact a#locatdet {
+          font-size: 12px;
+     }
+
+     .contact a#locatdet div {
+          margin-bottom: -35px;
+     }
+
+     .Informa ul li {
+          font-size: 12.8px;
+     }
+
+     .Informa .fotor {
+          font-size: 20px;
+     }
+
+     .helpful ul li a {
+          font-size: 13px;
+     }
+
+     .conta ul li a {
+          font-size: 13px;
+     }
+
+     .copyright p {
+          font-size: 14px;
+          text-align: center;
+     }
+
+     .contact div#garis.titlepage::before {
+          margin-top: -77px;
+     }
+
+     .contact .titlepage h2#cont1 {
+          margin-top: -65px;
+          font-size: 20px;
+     }
+
+     .contact .titlepage::before {
+          margin-top: -15px;
+          margin-bottom: -10px;
+     }
+
+     .contact .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -45px;
+     }
+
+     .we_do .titlepage::before {
+          margin-top: -80px;
+     }
+
+     .we_do .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -55px;
+          margin-top: -65px;
+     }
+
+     .about .titlepage::before {
+          margin-top: -50px;
+     }
+
+     .about .titlepage h2 {
+          margin-top: -40px;
+          margin-bottom: -10px;
+          font-size: 20px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 20px;
+          font-size: 12.5px;
+          margin-top: -25px;
+     }
+
+     .we_do .card-head a {
+          font-size: 19px;
+          line-height: 35px;
+     }
+
+     #bo_ho5 img {
+          width: 84px;
+          height: 84px;
+          margin-top: -3px;
+          margin-bottom: 15px;
+     }
+
+     #bo_ho1 img {
+          max-height: 157px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.42);
+          transform: scale(1.42);
+          margin-bottom: 20px;
+     }
+
+     #bo_ho7 img {
+          max-width: 279px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.42);
+          transform: scale(1.42);
+          margin-bottom: 20px;
+     }
+
+     .we_do .card .card-body center#tengah {
+          font-size: 16px;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a {
+          cursor: pointer;
+          transition: ease-in all 0.3s;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a:hover {
+          font-size: 22px;
+          transition: ease-in all 0.3s;
+          color: #A4907C;
+     }
+
+     .we_box {
+          padding: 30px;
+     }
+
+     .we_box h3 {
+          font-size: 19px;
+          padding-top: 13px;
+          margin-bottom: -20px;
+     }
+
+     .we_box h3 a#deswita {
+          font-size: 13px;
+     }
+
+     .we_box2 h3 a#deswita {
+          font-size: 13px;
+     }
+
+     .we_box p {
+          font-size: 13px;
+          line-height: 21px;
+          padding-bottom: 30px;
+     }
+
+     .we_box2 {
+          padding: 20px;
+     }
+
+     .we_box2 h3 {
+          font-size: 17px;
+          line-height: 17.5px;
+          margin-top: -5px;
+     }
+
+     .we_box2 p {
+          font-size: 12px;
+          line-height: 18px;
+          padding-top: 10px;
+          margin-top: -15px;
+          margin-bottom: -40px;
+     }
+
+     .we_box2 p.errors {
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we6 .carousel-indicators li {
+          height: 4px;
+          width: 4px;
+          border-radius: 50px;
+          background-color: #252525;
+     }
+
+     .we6 .carousel-indicators .active {
+          height: 8px;
+          width: 8px;
+          border-radius: 50px;
+          margin-top: -2px;
+     }
+
+     .we6 a.carousel-control-next,
+     .we6 a.carousel-control-prev {
+          width: 48px;
+          height: 48px;
+     }
+
+     .we6 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we6 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Medium Mobile Phone */
+@media screen and (min-width: 428px) and (max-width: 575.8px) {
+
+     #muncul1 {
+          display: none;
+     }
+
+     .muncul1 {
+          display: none;
+     }
+
+     .we_do.login .card.hom {
+          max-width: 85%;
+     }
+
+     .we_do div#prodkops .card#homstays {
+          border-radius: 23px;
+     }
+
+     .we_do div#prodkops .card#homstays .card-head {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     #xaxa img#bdy {
+          width: 156px;
+          height: 156px;
+     }
+
+     .contact .card#kontakcard {
+          border-radius: 23px;
+     }
+
+     .contact .card#kontakcard .card-head#kontakhead {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+     }
+
+     .contact div#xaxa.card-body {
+          border-radius: 23px;
+     }
+
+     .we_do div#kontakus.kontekas4 a#cont1 {
+          margin-top: 6px;
+     }
+
+     .we_do div#kontakus.kontekas2 a#cont1 {
+          margin-top: 6px;
+     }
+
+     /* .modal {
+         top: -3%;
+     }
+
+     #muncul .we_box2 {
+          transition: ease-out all 0.5s;
+     }
+     
+     #muncul .we_box2:hover {
+          height: 470px;
+          padding-top: 130px;
+          transition: ease-in all 0.5s;
+     } */
+
+     .header {
+          max-height: 11px;
+     }
+
+     .we_box2 p.atasd {
+          padding-top: 18px;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+          margin-bottom: 30px;
+     }
+
+     ul.social_icon li a {
+          line-height: 23px;
+          font-size: 20px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     .custom-file-input:lang(en)~.custom-file-label::after {
+          font-size: 13px;
+          line-height: 1.9;
+     }
+
+     .custom-file-label {
+          font-size: 13px;
+          line-height: 1.8;
+     }
+
+     .form-control {
+          font-size: 13px;
+     }
+
+     .form-group label#label {
+          font-size: 13px;
+     }
+
+     .bawahx {
+          margin-bottom: 17px;
+     }
+
+     .bawah {
+          margin-bottom: -5px;
+     }
+
+     button#gambz i {
+          font-size: 16px;
+     }
+
+     button#gambz {
+          margin-top: 20px;
+          font-size: 12px;
+          width: 110px;
+          height: 35px;
+          border-radius: 15px;
+     }
+
+     button#gamb {
+          width: 30px;
+          height: 30px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 12px;
+          border-radius: 10px;
+     }
+
+     button#gambs {
+          width: 30px;
+          height: 30px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 12px;
+          border-radius: 10px;
+     }
+
+     .modal-content {
+          width: 85%;
+          top: 30px;
+     }
+
+     .modal-title {
+          font-size: 13px;
+     }
+
+     .modal-header .close {
+          font-size: 18px;
+     }
+
+     span.adres {
+          font-size: 13px;
+     }
+
+     div#fasilitas.col-md-6 {
+          margin-top: -4px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 21px;
+          left: 45.4%;
+          right: 45.4%;
+          padding-top: 2.5px;
+          width: 40px;
+          height: 40px;
+     }
+
+     .about a#profdes.profdes i {
+          margin-left: -1px;
+     }
+
+     .about a#profdes.profdes:hover {
+          border: 7px #252525 solid;
+     }
+
+     a#kontakwa.float {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          animation-name: hubungiWA1;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 10px;
+          right: 12.5%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     i#kontak.my-float {
+          margin-top: 10.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 40px;
+          height: 40px;
+          animation-name: kunjungiShopee3;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 10px;
+          right: 12.5%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     img#kontakshop.my-float {
+          width: 17px;
+          height: 19px;
+          margin-top: -19px;
+     }
+
+     .navigation.navbar-dark .navbar-toggler-icon {
+          background: url(../images/menu_btn-1.png);
+          background-repeat: no-repeat;
+          float: right;
+          margin-top: 2px;
+     }
+
+     .footer a img {
+          height: 42px;
+          width: 120px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .header .logo_section {
+          margin-top: -6px;
+     }
+
+     .full img {
+          margin-top: -18px;
+          height: 25px;
+          max-width: 200px;
+     }
+
+     .full.gmbr img {
+          margin-top: -16px;
+     }
+
+     .we_box .read_more {
+          max-width: 100px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 11px;
+          margin-top: -10px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 120px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 11px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          font-size: 14px;
+     }
+
+     .contact h2#location {
+          margin-top: -50px;
+     }
+
+     .contact div.titlepage.hello::before {
+          margin-top: -65px;
+          margin-bottom: -10px;
+     }
+
+     .contact .card-body iframe {
+          width: 100%;
+          height: 205px;
+     }
+
+     .contact h4.card-title {
+          margin-bottom: 2px;
+     }
+
+     .contact .card-head a {
+          line-height: 37px;
+     }
+
+     .contact .card-head img {
+          height: 28px;
+          margin-bottom: 1px;
+     }
+
+     .contact a#watsap {
+          font-size: 11px;
+     }
+
+     .contact a#emailkub {
+          font-size: 11px;
+     }
+
+     .contact a#locatdet {
+          font-size: 11px;
+     }
+
+     .contact a#locatdet div {
+          margin-bottom: -40px;
+     }
+
+     .Informa ul li {
+          font-size: 12.4px;
+     }
+
+     .Informa .fotor {
+          font-size: 20px;
+     }
+
+     .helpful ul li a {
+          font-size: 12.6px;
+     }
+
+     .conta ul li a {
+          font-size: 12.6px;
+     }
+
+     .copyright p {
+          font-size: 13.8px;
+     }
+
+     .contact div#garis.titlepage::before {
+          margin-top: -80px;
+     }
+
+     .contact .titlepage h2#cont1 {
+          margin-top: -65px;
+          font-size: 20px;
+     }
+
+     .contact .titlepage::before {
+          margin-top: -15px;
+          margin-bottom: -10px;
+     }
+
+     .contact .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -45px;
+     }
+
+     .we_do .titlepage::before {
+          margin-top: -80px;
+     }
+
+     .we_do .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -55px;
+          margin-top: -65px;
+     }
+
+     .about .titlepage::before {
+          margin-top: -55px;
+     }
+
+     .about .titlepage h2 {
+          margin-top: -40px;
+          margin-bottom: -10px;
+          font-size: 20px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 20px;
+          font-size: 12px;
+          margin-top: -25px;
+     }
+
+     .we_do .card-head a {
+          font-size: 19px;
+          line-height: 35px;
+     }
+
+     #bo_ho5 img {
+          width: 76px;
+          height: 76px;
+          margin-top: -3px;
+          margin-bottom: 15px;
+     }
+
+     #bo_ho1 img {
+          max-height: 127px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+          margin-bottom: 20px;
+     }
+
+     #bo_ho7 img {
+          max-width: 226px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+          margin-bottom: 20px;
+     }
+
+     .we_do .card .card-body center#tengah {
+          font-size: 17px;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a {
+          cursor: pointer;
+          transition: ease-in all 0.3s;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a:hover {
+          font-size: 23px;
+          transition: ease-in all 0.3s;
+          color: #A4907C;
+     }
+
+     .we_box {
+          padding: 30px;
+     }
+
+     .we_box h3 {
+          font-size: 19px;
+          padding-top: 13px;
+          margin-bottom: -20px;
+     }
+
+     .we_box h3 a#deswita {
+          font-size: 13px;
+     }
+
+     .we_box2 h3 a#deswita {
+          font-size: 13px;
+     }
+
+     .we_box p {
+          font-size: 13px;
+          line-height: 21px;
+          padding-bottom: 20px;
+     }
+
+     .we_box2 {
+          padding: 20px;
+     }
+
+     .we_box2 h3 {
+          font-size: 16px;
+          line-height: 17.5px;
+          margin-top: -5px;
+     }
+
+     .we_box2 p {
+          font-size: 12px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 5px;
+          line-height: 18px;
+          margin-top: -15px;
+          margin-bottom: -39px;
+     }
+
+     .we_box2 p.errors {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we6 .carousel-indicators li {
+          height: 4px;
+          width: 4px;
+          border-radius: 5px;
+          background-color: #252525;
+     }
+
+     .we6 .carousel-indicators .active {
+          height: 8px;
+          width: 8px;
+          border-radius: 50px;
+          margin-top: -2px;
+     }
+
+     .we6 a.carousel-control-next,
+     .we6 a.carousel-control-prev {
+          width: 44px;
+          height: 44px;
+     }
+
+     .we6 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we6 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Medium-Small Mobile Phone */
+@media screen and (min-width: 375px) and (max-width: 427.8px) {
+
+     #muncul1 {
+          display: none;
+     }
+
+     .muncul1 {
+          display: none;
+     }
+
+     .we_do.login .card.hom {
+          max-width: 90%;
+     }
+
+     #xaxa img#bdy {
+          width: 136px;
+          height: 136px;
+     }
+
+     .we_do div#prodkops .card#homstays {
+          border-radius: 20px;
+     }
+
+     .we_do div#prodkops .card#homstays .card-head {
+          border-top-left-radius: 17px;
+          border-top-right-radius: 17px;
+     }
+
+     .contact .card#kontakcard {
+          border-radius: 20px;
+     }
+
+     .contact .card#kontakcard .card-head#kontakhead {
+          border-top-left-radius: 17px;
+          border-top-right-radius: 17px;
+     }
+
+     .contact div#xaxa.card-body {
+          border-radius: 20px;
+     }
+
+     .we_do div#kontakus.kontekas4 a#cont1 {
+          margin-top: 6px;
+     }
+
+     .we_do div#kontakus.kontekas2 a#cont1 {
+          margin-top: 6px;
+     }
+
+     /* .modal {
+         top: -3%;
+     }
+
+     #muncul .we_box2 {
+          transition: ease-out all 0.5s;
+     }
+     
+     #muncul .we_box2:hover {
+          height: 410px;
+          padding-top: 110px;
+          transition: ease-in all 0.5s;
+     } */
+
+     .header {
+          max-height: 11px;
+     }
+
+     .we_box2 p.atasd {
+          padding-top: 20px;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 200px;
+          margin-bottom: 25px;
+     }
+
+     ul.social_icon li a {
+          line-height: 18px;
+          font-size: 18px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     .custom-file-input:lang(en)~.custom-file-label::after {
+          font-size: 11px;
+          line-height: 2.2;
+     }
+
+     .custom-file-label {
+          font-size: 11px;
+          line-height: 2.1;
+     }
+
+     .form-control {
+          font-size: 11px;
+     }
+
+     .form-group label#label {
+          font-size: 11px;
+     }
+
+     .bawahx {
+          margin-bottom: 15px;
+     }
+
+     .bawah {
+          margin-bottom: -5px;
+     }
+
+     button#gambz i {
+          font-size: 15px;
+     }
+
+     button#gambz {
+          margin-top: 20px;
+          font-size: 11px;
+          width: 105px;
+          height: 35px;
+          border-radius: 15px;
+     }
+
+     button#gamb {
+          width: 28px;
+          height: 28px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 11px;
+          border-radius: 8px;
+     }
+
+     button#gambs {
+          width: 28px;
+          height: 28px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 11px;
+          border-radius: 8px;
+     }
+
+     .modal-content {
+          width: 85%;
+          top: 30px;
+     }
+
+     .modal-title {
+          font-size: 12px;
+     }
+
+     .modal-header .close {
+          font-size: 16px;
+     }
+
+     span.adres {
+          font-size: 12px;
+     }
+
+     div#fasilitas.col-md-6 {
+          margin-top: -5px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 18px;
+          left: 45.2%;
+          right: 45.2%;
+          padding-top: 2.5px;
+          width: 35px;
+          height: 35px;
+     }
+
+     .about a#profdes.profdes i {
+          margin-left: -1px;
+     }
+
+     .about a#profdes.profdes:hover {
+          border: 5px #252525 solid;
+     }
+
+     a#kontakwa.float {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          animation-name: hubungiWA1;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 10px;
+          right: 14.5%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     i#kontak.my-float {
+          margin-top: 10.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 40px;
+          height: 40px;
+          animation-name: kunjungiShopee3;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 10px;
+          right: 14.5%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     img#kontakshop.my-float {
+          width: 17px;
+          height: 19px;
+          margin-top: -19px;
+     }
+
+     .navigation.navbar-dark .navbar-toggler-icon {
+          background: url(../images/menu_btn-1.png);
+          background-repeat: no-repeat;
+          float: right;
+          margin-top: 2px;
+     }
+
+     .footer a img {
+          height: 41px;
+          width: 117px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .header .logo_section {
+          margin-top: -6px;
+     }
+
+     .full img {
+          margin-top: -18px;
+          height: 25px;
+          max-width: 180px;
+     }
+
+     .full.gmbr img {
+          margin-top: -16px;
+     }
+
+     .we_box .read_more {
+          max-width: 100px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 11px;
+          margin-top: -10px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 120px;
+          height: 28px;
+          line-height: 28px;
+          font-size: 11px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          font-size: 13px;
+     }
+
+     .contact h2#location {
+          margin-top: -50px;
+     }
+
+     .contact div.titlepage.hello::before {
+          margin-top: -65px;
+          margin-bottom: -10px;
+     }
+
+     .contact .card-body iframe {
+          width: 100%;
+          height: 205px;
+     }
+
+     .contact h4.card-title {
+          margin-bottom: 2px;
+     }
+
+     .contact .card-head a {
+          line-height: 37px;
+     }
+
+     .contact .card-head img {
+          height: 28px;
+          margin-bottom: 1px;
+     }
+
+     .contact a#watsap {
+          font-size: 11px;
+     }
+
+     .contact a#emailkub {
+          font-size: 11px;
+     }
+
+     .contact a#locatdet {
+          font-size: 11px;
+     }
+
+     .contact a#locatdet div {
+          margin-bottom: -40px;
+     }
+
+     .Informa ul li {
+          font-size: 12px;
+     }
+
+     .Informa .fotor {
+          font-size: 20px;
+     }
+
+     .helpful ul li a {
+          font-size: 12.2px;
+     }
+
+     .conta ul li a {
+          font-size: 12.2px;
+     }
+
+     .copyright p {
+          font-size: 13.6px;
+     }
+
+     .contact div#garis.titlepage::before {
+          margin-top: -80px;
+     }
+
+     .contact .titlepage h2#cont1 {
+          margin-top: -65px;
+          font-size: 20px;
+     }
+
+     .contact .titlepage::before {
+          margin-top: -15px;
+          margin-bottom: -10px;
+     }
+
+     .contact .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -45px;
+     }
+
+     .we_do .titlepage::before {
+          margin-top: -80px;
+     }
+
+     .we_do .titlepage h2 {
+          font-size: 20px;
+          margin-bottom: -55px;
+          margin-top: -65px;
+     }
+
+     .about .titlepage::before {
+          margin-top: -55px;
+     }
+
+     .about .titlepage h2 {
+          margin-top: -40px;
+          margin-bottom: -10px;
+          font-size: 20px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 20px;
+          font-size: 11px;
+          margin-top: -25px;
+     }
+
+     .we_do .card-head a {
+          font-size: 18.5px;
+          line-height: 35px;
+     }
+
+     #bo_ho5 img {
+          width: 72px;
+          height: 72px;
+          margin-top: -3px;
+          margin-bottom: 15px;
+     }
+
+     #bo_ho1 img {
+          max-height: 107px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.45);
+          transform: scale(1.45);
+          margin-bottom: 15px;
+     }
+
+     #bo_ho7 img {
+          max-width: 190px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+          margin-bottom: 15px;
+     }
+
+     .we_do .card .card-body center#tengah {
+          font-size: 16px;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a {
+          cursor: pointer;
+          transition: ease-in all 0.3s;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a:hover {
+          font-size: 22px;
+          transition: ease-in all 0.3s;
+          color: #A4907C;
+     }
+
+     .we_box {
+          padding: 30px;
+     }
+
+     .we_box h3 {
+          font-size: 18px;
+          padding-top: 10px;
+          margin-bottom: -20px;
+     }
+
+     .we_box h3 a#deswita {
+          font-size: 13px;
+     }
+
+     .we_box2 h3 a#deswita {
+          font-size: 11px;
+     }
+
+     .we_box p {
+          font-size: 12px;
+          line-height: 21px;
+          padding-bottom: 20px;
+     }
+
+     .we_box2 {
+          padding: 20px;
+     }
+
+     .we_box2 h3 {
+          font-size: 13px;
+          line-height: 17.5px;
+          margin-top: -10px;
+     }
+
+     .we_box2 p {
+          font-size: 11px;
+          line-height: 18px;
+          padding-left: 2px;
+          padding-right: 2px;
+          padding-top: 5px;
+          margin-top: -15px;
+          margin-bottom: -45px;
+     }
+
+     .we_box2 p.errors {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we6 .carousel-indicators li {
+          height: 2px;
+          width: 2px;
+          border-radius: 50px;
+          background-color: #252525;
+     }
+
+     .we6 .carousel-indicators .active {
+          height: 5px;
+          width: 5px;
+          border-radius: 50px;
+          margin-top: -1px;
+     }
+
+     .we6 a.carousel-control-next,
+     .we6 a.carousel-control-prev {
+          width: 42px;
+          height: 42px;
+          top: 44%;
+     }
+
+     .we6 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we6 a.carousel-control-next {
+          right: -20px;
+     }
+
+}
+
+/* Small Mobile Phone */
+@media only screen and (min-width: 300px) and (max-width: 374.8px) {
+
+     #muncul1 {
+          display: none;
+     }
+
+     .muncul1 {
+          display: none;
+     }
+
+     .we_do.login .card.hom {
+          max-width: 95%;
+     }
+
+     #xaxa img#bdy {
+          width: 116px;
+          height: 116px;
+     }
+
+     .we_do div#prodkops .card#homstays {
+          border-radius: 17px;
+     }
+
+     .we_do div#prodkops .card#homstays .card-head {
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+     }
+
+     .contact .card#kontakcard {
+          border-radius: 17px;
+     }
+
+     .contact .card#kontakcard .card-head#kontakhead {
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+     }
+
+     .contact div#xaxa.card-body {
+          border-radius: 17px;
+     }
+
+     .we_do div#kontakus.kontekas4 a#cont1 {
+          margin-top: 6px;
+     }
+
+     .we_do div#kontakus.kontekas2 a#cont1 {
+          margin-top: 6px;
+     }
+
+     /* .modal {
+         top: -3.5%;
+     }
+
+     #muncul .we_box2 {
+          transition: ease-out all 0.5s;
+     }
+     
+     #muncul .we_box2:hover {
+          height: 350px;
+          padding-top: 90px;
+          transition: ease-in all 0.5s;
+     } */
+
+     .header {
+          max-height: 11px;
+     }
+
+     ul.social_icon li a {
+          line-height: 18px;
+          font-size: 18px;
+     }
+
+     .we_box2 p.atasd {
+          padding-top: 20px;
+     }
+
+     .we_box2 iframe.card.img-top.homst {
+          height: 140px;
+          margin-bottom: 25px;
+     }
+
+     .we_do.profdesas {
+          margin-bottom: -150px;
+          margin-top: -50px;
+     }
+
+     .custom-file-input:lang(en)~.custom-file-label::after {
+          font-size: 10px;
+          line-height: 2.3;
+     }
+
+     .custom-file-label {
+          font-size: 10px;
+          line-height: 2.2;
+     }
+
+     .form-control {
+          font-size: 10px;
+     }
+
+     .form-group label#label {
+          font-size: 10px;
+     }
+
+     .bawahx {
+          margin-bottom: 15px;
+     }
+
+     .bawah {
+          margin-bottom: -5px;
+     }
+
+     button#gambz i {
+          font-size: 15px;
+     }
+
+     button#gambz {
+          margin-top: 20px;
+          font-size: 11px;
+          width: 105px;
+          height: 35px;
+          border-radius: 15px;
+     }
+
+     button#gamb {
+          width: 28px;
+          height: 28px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 11px;
+          border-radius: 8px;
+     }
+
+     button#gambs {
+          width: 28px;
+          height: 28px;
+          margin-top: 5px;
+          margin-bottom: -10px;
+          font-size: 11px;
+          border-radius: 8px;
+     }
+
+     .modal-content {
+          width: 80%;
+          top: 30px;
+     }
+
+     .modal-title {
+          font-size: 10px;
+     }
+
+     span.adres {
+          font-size: 10px;
+     }
+
+     .modal-header .close {
+          font-size: 16px;
+     }
+
+     div#fasilitas.col-md-6 {
+          margin-top: -10px;
+     }
+
+     .about a#profdes.profdes {
+          font-size: 18px;
+          left: 44.5%;
+          right: 44.5%;
+          padding-top: 2.5px;
+          width: 35px;
+          height: 35px;
+     }
+
+     .about a#profdes.profdes i {
+          margin-left: -1px;
+     }
+
+     .about a#profdes.profdes:hover {
+          border: 5px #252525 solid;
+     }
+
+     a#kontakwa.float {
+          width: 33px;
+          height: 33px;
+          font-size: 17px;
+          animation-name: hubungiWA1;
+     }
+
+     a#kontakwa[title]:hover::after {
+          font-size: 10px;
+          right: 15%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     i#kontak.my-float {
+          margin-top: 8.5px;
+     }
+
+     a#kunjshopee.float {
+          width: 33px;
+          height: 33px;
+          animation-name: kunjungiShopee4;
+     }
+
+     a#kunjshopee[title]:hover::after {
+          font-size: 10px;
+          right: 15%;
+          padding: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 15px;
+     }
+
+     img#kontakshop.my-float {
+          width: 14.5px;
+          height: 16px;
+          margin-top: -25px;
+     }
+
+     .navigation.navbar-dark .navbar-toggler-icon {
+          background: url(../images/menu_btn-1.png);
+          background-repeat: no-repeat;
+          float: right;
+          margin-top: 2px;
+     }
+
+     .footer a img {
+          height: 40px;
+          width: 115px;
+     }
+
+     .footer a.logo_footer {
+          margin-bottom: 70px;
+     }
+
+     .header .logo_section {
+          margin-top: -6px;
+     }
+
+     .full img {
+          margin-top: -18px;
+          height: 25px;
+          max-width: 180px;
+     }
+
+     .full.gmbr img {
+          margin-top: -16px;
+     }
+
+     .we_box .read_more {
+          max-width: 90px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 10px;
+          margin-top: -10px;
+          border-radius: 5px;
+     }
+
+     div#kontakus a#cont1 {
+          width: 110px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 10px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          border-radius: 15px;
+     }
+
+     .navigation.navbar-dark .navbar-nav .nav-link {
+          font-size: 11px;
+     }
+
+     .contact h2#location {
+          margin-top: -50px;
+     }
+
+     .contact div.titlepage.hello::before {
+          margin-top: -65px;
+          margin-bottom: -10px;
+     }
+
+     .contact .card-body iframe {
+          width: 100%;
+          height: 205px;
+     }
+
+     .contact h4.card-title {
+          margin-bottom: 2px;
+     }
+
+     .contact .card-head a {
+          line-height: 30px;
+     }
+
+     .contact .card-head img {
+          height: 24px;
+          margin-bottom: 1px;
+     }
+
+     .contact a#watsap {
+          font-size: 10px;
+     }
+
+     .contact a#emailkub {
+          font-size: 10px;
+     }
+
+     .contact a#locatdet {
+          font-size: 10px;
+     }
+
+     .contact a#locatdet div {
+          margin-bottom: -40px;
+     }
+
+     .Informa ul li {
+          font-size: 10px;
+     }
+
+     .Informa .fotor {
+          font-size: 18px;
+     }
+
+     .helpful ul li a {
+          font-size: 10.2px;
+     }
+
+     .conta ul li a {
+          font-size: 10.2px;
+     }
+
+     .copyright p {
+          font-size: 13.4px;
+     }
+
+     .contact div#garis.titlepage::before {
+          margin-top: -80px;
+     }
+
+     .contact .titlepage h2#cont1 {
+          margin-top: -65px;
+          font-size: 18px;
+     }
+
+     .contact .titlepage::before {
+          margin-top: -15px;
+          margin-bottom: -10px;
+     }
+
+     .contact .titlepage h2 {
+          font-size: 18px;
+          margin-bottom: -45px;
+     }
+
+     .we_do .titlepage::before {
+          margin-top: -80px;
+     }
+
+     .we_do .titlepage h2 {
+          font-size: 18px;
+          margin-bottom: -55px;
+          margin-top: -65px;
+     }
+
+     .about .titlepage::before {
+          margin-top: -55px;
+     }
+
+     .about .titlepage h2 {
+          margin-top: -40px;
+          margin-bottom: -10px;
+          font-size: 18px;
+     }
+
+     .about .titlepage p#deskabou {
+          line-height: 20px;
+          font-size: 9px;
+          margin-top: -25px;
+     }
+
+     .we_do .card-head a {
+          font-size: 18px;
+          line-height: 35px;
+     }
+
+     #bo_ho5 img {
+          width: 66px;
+          height: 66px;
+          margin-top: -3px;
+          margin-bottom: 15px;
+     }
+
+     #bo_ho1 img {
+          max-height: 87px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho1 img:hover {
+          -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+          margin-bottom: 10px;
+     }
+
+     #bo_ho7 img {
+          max-width: 155px;
+          margin-top: 5px;
+          border-radius: 10px;
+     }
+
+     #bo_ho7 img:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+          margin-bottom: 10px;
+     }
+
+     .we_do .card .card-body center#tengah {
+          font-size: 14px;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a {
+          cursor: pointer;
+          transition: ease-in all 0.3s;
+     }
+
+     .we_do .card .card-body center#tengah span#spek a:hover {
+          font-size: 20px;
+          transition: ease-in all 0.3s;
+          color: #A4907C;
+     }
+
+     .we_do h3#culttitle span#spen {
+          font-weight: lighter;
+          font-size: 12px;
+          font-style: italic;
+          color: #808080;
+     }
+
+     .we_box {
+          padding: 30px;
+     }
+
+     .we_box h3 {
+          font-size: 16px;
+          padding-top: 10px;
+          margin-bottom: -20px;
+     }
+
+     .we_box h3 a#deswita {
+          font-size: 11px;
+     }
+
+     .we_box2 h3 a#deswita {
+          font-size: 9px;
+     }
+
+     .we_box p {
+          font-size: 10px;
+          line-height: 21px;
+          padding-bottom: 20px;
+     }
+
+     .we_box2 {
+          padding: 20px;
+     }
+
+     .we_box2 h3 {
+          font-size: 10px;
+          line-height: 15px;
+          margin-top: -10px;
+     }
+
+     .we_box2 p {
+          font-size: 9px;
+          line-height: 15px;
+          padding-left: 1px;
+          padding-right: 1px;
+          padding-top: 5px;
+          margin-top: -15px;
+          margin-bottom: -45px;
+     }
+
+     .we_box2 p.errors {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 5px;
+          margin-top: 0px;
+     }
+
+     .we6 .carousel-indicators li {
+          height: 2px;
+          width: 2px;
+          border-radius: 50px;
+          background-color: #252525;
+     }
+
+     .we6 .carousel-indicators .active {
+          height: 4px;
+          width: 4px;
+          border-radius: 50px;
+          margin-top: -1.15px;
+     }
+
+     .we6 a.carousel-control-next,
+     .we6 a.carousel-control-prev {
+          width: 42px;
+          height: 42px;
+          top: 42%;
+     }
+
+     .we6 a.carousel-control-prev {
+          left: -20px;
+     }
+
+     .we6 a.carousel-control-next {
+          right: -20px;
+     }
+
+}

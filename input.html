@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Admin Page &nbsp;&nbsp;|&nbsp;&nbsp; Homestay</title>
+    <!-- Icon -->
+    <link rel="icon" type="icon" href="images/logodwl.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row d_flex">
+                    <div class=" col-md-2 col-sm-3 col logo_section">
+                        <div class="full gmbr">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html" target="_blank"><img src="images/DWL.png" alt="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-sm-9" style="margin-top: -8px">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html" target="_blank">Homestay</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="input.html" style="font-weight: bolder">Tambah
+                                            Homestay</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="logout" style="cursor: pointer">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- about -->
+    <div class="about input">
+    </div>
+    <!-- end about -->
+    <!-- Tambah Homestay -->
+    <div class="we_do profdesas tamb">
+        <div id="prodkops" class="container">
+            <div class="card" id="homstays">
+                <div class="card-head" align="center">
+                    <a id="coff">TAMBAH HOMESTAY</a>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container-fluid">
+                                        <div class="carousel-caption we1_do">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div id="bo_ho5">
+                                                        <i>
+                                                            <img src="images/homstay.png" alt="#">
+                                                        </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner" style="margin-bottom: 10px">
+                                <div class="carousel-item active">
+                                    <div class="container-fluid">
+                                        <div class="carousel-caption we1_do">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div id="bo_ho" class="we_box2 inputed text_align_left"
+                                                        style="margin-top: 20px">
+                                                        <!-- Form -->
+                                                        <form name="form-homestay" enctype="multipart/form-data">
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="name"><i
+                                                                                class="bi bi-person-fill"></i>
+                                                                            &nbsp;Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="name"
+                                                                            placeholder="Contoh : Budi, Tono, dll.">
+                                                                        <p id="name_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="chse"><i
+                                                                                class="bi bi-patch-check-fill"></i>
+                                                                            &nbsp;CHSE</label>
+                                                                        <select class="form-control" id="chse">
+                                                                            <option selected disabled>Pilih...</option>
+                                                                            <option>Tersertifikasi CHSE</option>
+                                                                            <option>Belum Terverifikasi CHSE</option>
+                                                                        </select>
+                                                                        <p id="chse_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label id="label" for="almt"><i
+                                                                                class="bi bi-mailbox2"></i>
+                                                                            &nbsp;Alamat</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="almt"
+                                                                            placeholder="Contoh : Lerep RT 002 / RW 002, Kelurahan Lerep...">
+                                                                        <p id="almt_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="foto1"><i
+                                                                                class="bi bi-image-fill"></i> &nbsp;Foto
+                                                                            1</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="foto1"
+                                                                                accept="image/png, image/jpeg, image/jpg">
+                                                                            <label class="custom-file-label"
+                                                                                for="customFile" id="pilih1">Pilih
+                                                                                Foto</label>
+                                                                            <p id="foto1_err" class="errors"
+                                                                                align="left"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="foto2"><i
+                                                                                class="bi bi-image-fill"></i> &nbsp;Foto
+                                                                            2</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="foto2"
+                                                                                accept="image/png, image/jpeg, image/jpg">
+                                                                            <label class="custom-file-label"
+                                                                                for="customFile" id="pilih2">Pilih
+                                                                                Foto</label>
+                                                                            <p id="foto2_err" class="errors"
+                                                                                align="left"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="foto3"><i
+                                                                                class="bi bi-image-fill"></i> &nbsp;Foto
+                                                                            3</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="foto3"
+                                                                                accept="image/png, image/jpeg, image/jpg">
+                                                                            <label class="custom-file-label"
+                                                                                for="customFile" id="pilih3">Pilih
+                                                                                Foto</label>
+                                                                            <p id="foto3_err" class="errors"
+                                                                                align="left"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="foto4"><i
+                                                                                class="bi bi-image-fill"></i> &nbsp;Foto
+                                                                            4</label>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="foto4"
+                                                                                accept="image/png, image/jpeg, image/jpg">
+                                                                            <label class="custom-file-label"
+                                                                                for="customFile" id="pilih4">Pilih
+                                                                                Foto</label>
+                                                                            <p id="foto4_err" class="errors"
+                                                                                align="left"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="kmrtdur"><i
+                                                                                class="bi bi-lamp-fill"></i>
+                                                                            &nbsp;Jumlah Kamar Tidur</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="kmrtdur" placeholder="Contoh : 1">
+                                                                        <p id="kamar_tidur_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="kmrmndi"><i
+                                                                                class="fa-solid fa-shower"></i>
+                                                                            &nbsp;Jumlah Kamar Mandi</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="kmrmndi" placeholder="Contoh : 1">
+                                                                        <p id="kamar_mandi_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="kasurt"><i
+                                                                                class="fa-solid fa-bed"></i>
+                                                                            &nbsp;&nbsp;Kasur Tunggal / Ganda</label>
+                                                                        <select class="form-control" id="kasurt">
+                                                                            <option selected disabled>Pilih...</option>
+                                                                            <option>Tunggal</option>
+                                                                            <option>Ganda</option>
+                                                                        </select>
+                                                                        <p id="kasur_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="klosett"><i
+                                                                                class="fa-solid fa-toilet"></i>
+                                                                            &nbsp;&nbsp;Kloset Jongkok / Duduk</label>
+                                                                        <select class="form-control" id="klosett">
+                                                                            <option selected disabled>Pilih...</option>
+                                                                            <option>Jongkok</option>
+                                                                            <option>Duduk</option>
+                                                                        </select>
+                                                                        <p id="kloset_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="kapasit"><i
+                                                                                class="bi bi-people-fill"></i>
+                                                                            &nbsp;Kapasitas</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="kapasit" placeholder="Contoh : 2">
+                                                                        <p id="kapasitas_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label id="label" for="lstrik"><i
+                                                                                class="bi bi-lightning-charge-fill"></i>
+                                                                            &nbsp;Listrik</label>
+                                                                        <input type="number" step="any"
+                                                                            class="form-control" id="lstrik"
+                                                                            placeholder="Contoh : 900">
+                                                                        <p id="listrik_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label id="label" for="embe"><i
+                                                                                class="fa-solid fa-code"></i> &nbsp;Link
+                                                                            Embed</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="embe"
+                                                                            placeholder="Contoh : https://www.google.com/maps/embed?pb=!1m...">
+                                                                        <p id="iframe_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 bawahx">
+                                                                        <label id="label" for="mapp"><i
+                                                                                class="bi bi-geo-alt-fill"></i>
+                                                                            &nbsp;Link GMaps</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="mapp"
+                                                                            placeholder="Contoh : https://goo.gl/maps/d69buyk59NDAFNtw5">
+                                                                        <p id="gmap_err" class="errors" align="left">
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-3 bawahx">
+                                                                        <label id="label" for="latit"><i
+                                                                                class="bi bi-geo-fill"></i>
+                                                                            &nbsp;Latitude</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="latit" step="any"
+                                                                            placeholder="Contoh : -7.2358966">
+                                                                        <p id="latitude_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label id="label" for="longit"><i
+                                                                                class="bi bi-geo-fill"></i>
+                                                                            &nbsp;Longitude</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="longit" step="any"
+                                                                            placeholder="Contoh : 110.837596">
+                                                                        <p id="longitude_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label id="label" for="ststing"><i
+                                                                                class="bi bi-person-video3"></i>
+                                                                            &nbsp;Status Tinggal</label>
+                                                                        <select class="form-control" id="ststing">
+                                                                            <option selected disabled>Pilih...</option>
+                                                                            <option>Bersama Penghuni</option>
+                                                                            <option>Tanpa Penghuni</option>
+                                                                        </select>
+                                                                        <p id="status_tinggal_err" class="errors"
+                                                                            align="left"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group bawah">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label id="label" for="othe"><i
+                                                                                class="bi bi-info-circle-fill"></i>
+                                                                            &nbsp;Lainnya</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="othe"
+                                                                            placeholder="Contoh : Dapur, Kulkas, Masker, dll.">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-12" align="center">
+                                                                        <button type="submit" id="gambz" class="btn"
+                                                                            title="Tambah Homestay">
+                                                                            <i class="bi bi-house-add-fill"></i>
+                                                                            &nbsp;Tambah
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <!-- end Form -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Tambah Homestay -->
+    <!-- Page Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11">
+                        <a class="logo_footer" id="bo_ho2" href="index.html" target="_blank"><img src="images/DWL.png"
+                                alt="#"></a>
+                    </div>
+                    <!-- <div class="col-md-1">
+                &nbsp; -->
+                    <!-- <form class="newslatter_form" action="mailto:alfrethanovcwjy@gmail.com" method="GET">
+                   <input type="hidden" value="Email--Berlangganan" name="subject">
+                   <input type="email" class="ente" placeholder="Kirim Email untuk berlangganan" name="body">
+                   <button class="subs_btn" type="submit" name="submit">Kirim</button>
+                </form> -->
+                    <!-- </div> -->
+                    <br><br><br>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="Informa helpful">
+                            <h3 class="fotor" id="pages">Halaman</h3>
+                            <ul>
+                                <li>
+                                    <a id="futerabou" href="input.html"><span style="color: #A4907C"><i
+                                                class="bi bi-house-add-fill"></i></span> Tambah Homestay</a>
+                                </li>
+                                <li>
+                                    <a id="futerhome" href="index.html" target="_blank"><span style="color: #D3D3D3"><i
+                                                class="bi bi-house-fill"></i></span> Homestay</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="Informa conta">
+                            <h3 class="fotor" id="contfut">Hubungi Kami</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://goo.gl/maps/vpMwQhrAWrvjc5eK9" target="blank_">
+                                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Desa Wisata Lerep
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/6283842741920?text=[%20*Homestay%20Lerep*%20•%20PERTANYAAN%20/%20QUESTION%20]%0a%0aHi!%20I%20visited%20Homestay%20Lerep%20website%20and%20I%20have%20a%20Question:%0a"
+                                        target="_blank">
+                                        <i class="bi bi-whatsapp" aria-hidden="true"></i> Koordinator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/6289655491853?text=[%20*Homestay%20Lerep*%20•%20PERTANYAAN%20/%20QUESTION%20]%0a%0aHi!%20I%20visited%20Homestay%20Lerep%20website%20and%20I%20have%20a%20Question:%0a"
+                                        target="_blank">
+                                        <i class="bi bi-whatsapp" aria-hidden="true"></i> Marketing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:deswitalerep@gmail.com?subject=[%20Homestay%20Lerep%20•%20PERTANYAAN%20/%20QUESTION%20],&body=Hi!%20I%20visited%20Homestay%20Lerep%20website%20and%20I%20have%20a%20Question:%0a"
+                                        target="_blank">
+                                        <i class="bi bi-envelope-at-fill" aria-hidden="true"></i> <span
+                                            style="margin-left: 1px">deswitalerep@gmail.com</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://shopee.co.id/">
+                                        <i class="bi bi-bag-fill" aria-hidden="true" style="color: #EE4D2D"></i> <span
+                                            style="margin-left: 1px">Toko Kami</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="Informa">
+                            <h3 class="fotor" id="aboufut">Homestay</h3>
+                            <ul>
+                                <li id="aboufutdet" align="justify">
+                                    Desa kami menyajikan fasilitas Homestay untuk para tamu menginap sembari menikmati
+                                    berbagai
+                                    macam wisata yang ada di Desa kami.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Footer -->
+            <div class="copyright text_align_left">
+                <div class="container">
+                    <div class="row d_flex">
+                        <div class="col-md-7">
+                            <p>Copyright &copy; <b>2023</b> - <b>
+                                    <script>document.write(new Date().getFullYear())</script>
+                                </b> &nbsp;<b>|</b>&nbsp; <a href="index.html" style="font-family: 'Droid Serif'"
+                                    target="_blank">Desa
+                                    Wisata
+                                    Lerep</a> &nbsp;<b>|</b>&nbsp; All Rights Reserved
+                            </p>
+                        </div>
+                        <!-- Social Media -->
+                        <div class="col-md-5">
+                            <ul class="social_icon text_align_center">
+                                <li>
+                                    <a href="https://web.facebook.com/desawisatalerepungaran/?_rdc=1&_rdr"
+                                        target="blank_"><i class="fa fa-facebook-f" style="color: #4267B2"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/DesaLerep" target="blank_"><i class="fa fa-twitter"
+                                            style="color: #1DA1F2"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/desawisatalerep/" target="blank_"><i
+                                            class="fa fa-instagram" aria-hidden="true" style="color: #C13584"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCgRLgw7EzDiqmZeEg9f-Agg"
+                                        target="blank_"><i class="fa fa-youtube-play" aria-hidden="true"
+                                            style="color: #FF0000"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end Social Media -->
+                    </div>
+                </div>
+            </div>
+            <!-- end web footer -->
+        </div>
+    </footer>
+    <!-- end page footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+    <!-- Backend -->
+    <script type="module" src="http://127.0.0.1:8080/js/input.js"></script>
+    <script type="module" src="http://127.0.0.1:8080/js/logout.js"></script>
+    <!-- Firebase Configuration -->
+    <script type="module" src="http://127.0.0.1:8080/js/firebase-config.js"></script>
+    <!-- end JavaScript files -->
+</body>
+
+</html>
